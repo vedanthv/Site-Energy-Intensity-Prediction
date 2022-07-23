@@ -76,8 +76,11 @@ def main():
             'heating_degree_days','snowfall_inches','days_below_20F','days_above_80F','direction_max_wind_speed','direction_peak_wind_speed','days_with_fog']).reshape(1,-1)
               
  
-       
-         
+    pred = get_prediction(data=data, model=cb_model)
+
+    st.write(f"The predicted Site Energy Intensity is:  {pred}")
+
+        
         
 
 
