@@ -66,3 +66,6 @@ def main():
         days_with_fog = st.slider('days_with_fog',30.0, 200.0, value=30.0, format="%f")
 
 
+        submit_values = st.form_submit_button("Predict")
+
+
