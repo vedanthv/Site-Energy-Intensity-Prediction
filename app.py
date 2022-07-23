@@ -80,7 +80,9 @@ def main():
 
     st.write(f"The predicted Site Energy Intensity is:  {pred}")
 
-        
+if __name__ == '__main__':
+  main() 
+
         
 
 
