@@ -1,5 +1,6 @@
 ## Site Energy Intensity Prediction
 
+[Blog Post](https://vedanthvbaliga.netlify.app/blog/site-energy-intensity-pred/) explaining the entire project
 #### Note :
 
 Unfortunately plotly graphs dont display on github as the latter is set for static plots only, hence please 
