@@ -33,3 +33,23 @@ To make the code in the projects modular, I have used helper functions that incl
 * Since the number of duplicates is very less compared to the 75k samples in the dataset, I have removed the duplicates.
 
 * I have left the duplicates in the test set as otherwise, it could affect the predictions.
+
+# Feature Engineering
+
+## Create Individual Datasets Based on Facility Types
+
+In this section I split the datasets into 12 individual ones based on facility types with similar `site_eui` characteristics.
+
+**Why I did this:**
+- In this project, facility type was a feature that described what kind of facility a building was, and there were 60 total types.
+
+- When I was doing exploratory data analysis, I noticed that there were an uneven number of facilities of different types.
+
+- For example, there were 40k Multifamily buildings in the dataset, while other facility types such as Industrial only had a few hundred (or even less).
+
+- Further, the distribution of site energy usage for different facility types was drastically different than others, and certain feature distributions were different as well.
+
+- Therefore, it intuitively did not make sense to me to just train one machine learning model, since for example, how could a model trained with a significant portion of the data being related to Multifamily homes, make accurate predictions on other types where there was only 100 examples?
+
+- So my idea behind this was to create smaller datasets of similar buildings that had similar energy usage patterns and feature distributions, and then to use these to train individual machine learning models on each dataset, with the ultimate goal of getting more accurate predictions overall in the end.
+
