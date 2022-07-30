@@ -53,3 +53,13 @@ In this section I split the datasets into 12 individual ones based on facility t
 
 - So my idea behind this was to create smaller datasets of similar buildings that had similar energy usage patterns and feature distributions, and then to use these to train individual machine learning models on each dataset, with the ultimate goal of getting more accurate predictions overall in the end.
 
+**How I did it:**
+- In developing the individual datasets I tried a bunch of things, including:
+    1. Naively grouping buildings based on the first word in their facility type, for example the types `Food_Sales` and `Food_Sales_Other` were grouped together in a dataset called `Food`.
+    2. Using KMeans clustering to cluster similar buildings together, and then group the buildings based on cluster labels.
+    3. Manually grouping buildings based on exploratory data analysis and iterating to optmize the Kaggle score
+
+**What worked best:**
+
+- In my final solution, I separate the train and test datasets into 12 individual data sets (each).
+- You can see the exact groups of facility types that I used by reading the `get_manual_facility_groups` function in the Helper Sections [2nd Section] of the notebook 
