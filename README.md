@@ -1,15 +1,12 @@
 ## Site Energy Intensity Prediction
 
 [Blog Post](https://vedanthvbaliga.netlify.app/blog/site-energy-intensity-pred/) explaining the entire project
-#### Note :
 
 Unfortunately plotly graphs dont display on github as the latter is set for static plots only, hence please 
 use this nbviewer [link](https://nbviewer.org/github/vedanthv/Site-Energy-Intensity-Prediction/blob/master/version1.ipynb) to view the notebook.
 
-🧾**Description:** According to a report issued by the International Energy Agency (IEA), the lifecycle of buildings from construction to demolition was responsible for 37% of global energy-related and process-related CO2 emissions in 2020. Yet it is possible to drastically reduce the energy consumption of buildings by a combination of easy-to-implement fixes and state-of-the-art strategies. 
+## Abstract
 
-The dataset consists of building characteristics, weather data for the location of the building, as well as the energy usage for the building, and the given year, measured as Site Energy Usage Intensity (Site EUI). Each row in the data corresponds to a single building observed in a given year.
+Climate change is a globally relevant, urgent, and multi-faceted issue heavily impacted by energy policy and infrastructure. Addressing climate change involves mitigation (i.e. mitigating greenhouse gas emissions) and adaptation (i.e. preparing for unavoidable consequences). Mitigation of GHG emissions requires changes to electricity systems, transportation, buildings, industry, and land use.
 
-🧭 **Problem Statement:** You are provided with two datasets: (1) the train\_dataset where the observed values of the Site EUI for each row are provided and (2) the x\_test dataset the observed values of the Site EUI for each row are removed and provided separately in y\_test. Your task is to predict the Site EUI for each row (using the complete training dataset), given the characteristics of the building and the weather data for the location of the building. Use the test sets for validation and testing. 
-
-The target variable is **site\_eui** and the evaluation metric is **RMSE** score.
+the lifecycle of buildings from construction to demolition were responsible for 37% of global energy-related and process-related CO2 emissions in 2020. Yet it is possible to drastically reduce the energy consumption of buildings by a combination of easy-to-implement fixes and state-of-the-art strategies.
