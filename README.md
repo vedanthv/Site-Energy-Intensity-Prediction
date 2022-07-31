@@ -99,9 +99,9 @@ In this section I perform feature engineering and add many features to the data:
 
 - This would suggest that a buildings prior site energy usage reading can be used as a key predictor in predicting it's future energy usage (similar to pure time series data).
 
-Here are the features that were engineered from scratch.
+Here the features that were engineered from scratch.
 
-<img src = "/blog/site-energy-intensity-pred/new_feat.PNG">
+<!-- <img src = "/blog/site-energy-intensity-pred/new_feat.PNG"> -->
 
 # Modelling
 
