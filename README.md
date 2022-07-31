@@ -129,4 +129,11 @@ In this section, I perform cross validation.
 
 - The mean cross validation scores for each grouped dataset are included below, we can see that for some groups, the train and validation scores are quite good, except for a few, namely `Food_Grocery`, `Health`, and `Laboratory_Data`.
 
+## Feature Importance
+
+- I plot the feature importance graphs from the lightGBM regressor models.
+
+- I only include an example for the four `2to4_5plus_Mixed` models that resulted from the cross validation process, otherwise there would be too many plots to look at in this notebook.
+
+- We'll see that in each fold the grouped median features and interaction features with `energy_star_rating` are the most important
 
