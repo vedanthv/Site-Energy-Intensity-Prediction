@@ -137,3 +137,14 @@ In this section, I perform cross validation.
 
 - We'll see that in each fold the grouped median features and interaction features with `energy_star_rating` are the most important
 
+## Final Models and Predictions
+
+### Baseline RMSE calculation
+
+```
+avg_site_eui = [y_train.mean()] * len(y_train)
+rmse = mean_squared_error(y_train, avg_site_eui, squared=False)
+print('Baseline RMSE: %.3f' % (rmse))
+```
+
+The baseline RMSE I obtained was 0.57926. In the perfect world we cant get a RMSE of 0.0 but let's try to reduce it.
