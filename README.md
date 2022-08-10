@@ -183,4 +183,9 @@ print('RMSE of random forest: %.3f' % (np.sqrt(cv_scores.mean())))
 ```
 RMSE I received for Random Forest Model is 0.42317
 
+### XGBoost Model
+
+```
+xgb = XGBRegressor(n_estimators=2000, learning_rate=0.2)
+xgb.fit(X_train_lasso, y_train)
 
