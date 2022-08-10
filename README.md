@@ -175,3 +175,12 @@ cv_scores = cross_val_score(rf, X_train_lasso, y_train,
                            n_jobs=-1, error_score='raise', verbose=1)
 ```
 
+**RMSE Score for Random Forest Model:**
+
+```
+cv_scores = np.absolute(cv_scores)
+print('RMSE of random forest: %.3f' % (np.sqrt(cv_scores.mean())))
+```
+RMSE I received for Random Forest Model is 0.42317
+
+
