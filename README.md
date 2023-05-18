@@ -191,4 +191,4 @@ xgb.fit(X_train_lasso, y_train)
 rmse = mean_squared_error(y_val, y_pred, squared=False)
 print('RMSE of extreme gradient boosting: %.3f' % (rmse))
 ```
-RMSE I received from XGBoost Model : 0.40337
+RMSE I received from XGBoost Model : 0.50367
